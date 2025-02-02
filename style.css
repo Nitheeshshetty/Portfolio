@@ -1,0 +1,873 @@
+
+  
+/* Base Styles (Default for large screens) */
+.about-section {
+  background-color: #212529;
+  padding: 60px 20px;
+  /* border: 20px solid #2c2f33;
+  border-radius: 15px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+  color: #007bff; /* Blue headline */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-section .profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-section .name-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.about-section .data-engineer-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #f5a623;
+  margin-top: 5px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #dddddd;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+}
+
+/* Responsive Adjustments */
+
+/* For Extra Large Screens (e.g., desktops wider than 1200px) */
+@media (min-width: 1200px) {
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+  .about-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Large Screens (e.g., tablets in landscape mode, desktops from 992px to 1200px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+  .about-section p {
+    font-size: 1.15rem;
+  }
+  .about-section .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* For Medium Screens (e.g., tablets and smaller laptops from 768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .about-section h2 {
+    font-size: 2.2rem;
+  }
+  .about-section .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+  .about-section .name-title {
+    font-size: 1.6rem;
+  }
+
+  .about-section .data-engineer-title {
+    font-size: 1.3rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}
+
+/* For Small Screens (e.g., phones in landscape mode and smaller tablets from 576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .about-section h2 {
+    font-size: 2rem;
+  }
+  .about-section .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .about-section .name-title {
+    font-size: 1.4rem;
+  }
+
+  .about-section .data-engineer-title {
+    font-size: 1.1rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+  }
+
+  .about-section .name-title {
+    margin-top: 2px; /* Reduce gap further */
+  }
+}
+
+/* For Extra Small Screens (e.g., phones smaller than 576px) */
+@media (max-width: 575px) {
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+  .about-section .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-section .name-title {
+    font-size: 1.2rem;
+    margin-top: 0px;
+  }
+
+  .about-section .data-engineer-title {
+    font-size: 0.9rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .about-section .profile-img {
+    margin-bottom: 0px; /* Remove extra spacing */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Experience Section */
+.experience-section {
+  background-color: #212529; /* Dark background */
+  padding: 60px 20px;
+}
+
+.experience-section h2 {
+  color: #007bff; /* Blue headline */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Experience Card */
+.experience-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c2f33; /* Card background */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto 40px auto; /* Center-align the card */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.company-img {
+  width: 120px; /* Image size */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.company-role {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cccccc; /* Light text */
+  margin-top: 5px;
+}
+
+.date-range {
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.company-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f5a623;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  text-align: left; /* Ensure left-aligned text */
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .experience-section h2 {
+    font-size: 2.2rem; /* Reduce title size */
+  }
+  .experience-card {
+    flex-wrap: wrap; /* Stack vertically */
+  }
+  .company-img {
+    width: 100px;
+    height: 100px;
+  }
+  .company-name {
+    font-size: 0.9rem;
+  }
+  .company-role {
+    font-size: 1.3rem;
+  }
+  .company-title {
+    font-size: 1.1rem;
+  }
+  .date-range {
+    font-size: 0.9rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Screens (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .experience-section h2 {
+    font-size: 2rem; /* Further reduce title size */
+  }
+  .experience-card {
+    flex-wrap: wrap;
+  }
+  .company-img {
+    width: 90px;
+    height: 90px;
+  }
+  .company-name {
+    font-size: 0.85rem;
+  }
+  .company-role {
+    font-size: 1.2rem;
+  }
+  .company-title {
+    font-size: 1rem;
+  }
+  .date-range {
+    font-size: 0.85rem;
+  }
+  .description {
+    font-size: 0.85rem;
+    text-align: left; /* Ensure left alignment */
+  }
+}
+
+/* Extra Small Screens (Below 576px) */
+@media (max-width: 575px) {
+  .experience-section h2 {
+    font-size: 1.8rem; /* Reduce even more */
+  }
+  .experience-card {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .company-img {
+    width: 80px;
+    height: 80px;
+  }
+  .company-name {
+    font-size: 0.8rem;
+  }
+  .company-role {
+    font-size: 1rem;
+  }
+  .company-title {
+    font-size: 0.9rem;
+  }
+  .date-range {
+    font-size: 0.8rem;
+  }
+  .description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: left !important; /* Ensure it stays left-aligned */
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Project Container */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Project Card - Default (Horizontal Layout for Large Screens) */
+.project-card {
+  display: flex;
+  flex-direction: row; /* Horizontal by default */
+  background-color: #212529;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Card Image (Fixed width for horizontal layout) */
+.project-card img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-right: 5px solid #007bff;
+}
+
+/* Project Card Content */
+.project-card .card-body {
+  padding: 20px;
+  color: #ddd;
+  flex: 1;
+}
+
+.project-card h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Skills Tags */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ----------- Responsive Design ----------- */
+
+/* Medium Screens (Below 992px) */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Change to Vertical Layout */
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card img {
+    width: 100%; /* Full width */
+    border-right: none;
+    border-bottom: 5px solid #007bff;
+  }
+
+  .project-card h5 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (Below 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .project-card h5 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (Below 576px) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .project-card .card-body {
+    padding: 15px;
+  }
+
+  .project-card h5 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Skills section style */
+/* .skills-section {
+  background-color: #212529;
+  padding: 60px 20px;
+} */
+.skills-section {
+  background-color: #212529;
+  padding: 40px 10px;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill-card {
+  background-color: #212529 !important;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border: 1px solid #343a40; /* Slightly darker border */
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card .card-img-wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.skill-card .card-body {
+  background-color: #212529 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.skill-card .btn {
+  /* background-color:#fff; */
+  font-size: 0.75rem;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 3px 6px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-card .btn:hover {
+  background-color: #007bff;
+  color: #fff ;
+}
+
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 1.8rem;
+  }
+  .skill-card .card-img-wrapper {
+    height: 70px;
+  }
+  .skill-card img {
+    max-height: 60px;
+  }
+  .skill-card .btn {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section h2 {
+    font-size: 1.5rem;
+  }
+  .skill-card .card-img-wrapper {
+    height: 60px;
+  }
+  .skill-card img {
+    max-height: 50px;
+  }
+  .skill-card .btn {
+    font-size: 0.65rem;
+    padding: 2px 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background-color: #212529;
+  padding: 60px 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Contact Cards */
+.contact-card {
+  background-color: #212529 !important;
+  border: 1px solid #343a40;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%; 
+  max-width: 700px; /* Adjust width */
+  margin: 20px auto;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form */
+.contact-form .form-control {
+  background-color: #343a40;
+  color: white;
+  border: 1px solid #495057;
+}
+
+.contact-form .form-control::placeholder {
+  color: #adb5bd;
+}
+
+.contact-form .btn {
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Social Links */
+.social-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Medium Screens (Below 992px) */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .contact-form .btn {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (Below 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .contact-card h5 {
+    font-size: 1.2rem;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Screens (Below 576px) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-card h5 {
+    font-size: 1.1rem;
+  }
+
+  .contact-card p {
+    font-size: 0.95rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation Styling */
+
+/* Gradient Background for Navbar */
+.navbar {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background: linear-gradient(to right, #429cf5, #007bff); /* Gradient background */
+}
+
+/* Navbar Branding */
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #f5f5f5; /* Lighter color on hover for contrast */
+  transform: scale(1.1); /* Slightly zooms in on hover */
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem;
+  color: #fff; /* White color for links */
+  padding: 10px 15px; /* Add some padding to the links */
+  border-radius: 4px; /* Rounded corners for better look */
+  transition: color 0.3s ease, padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+/* Navbar Link Hover Effects */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fff; /* Keep the color white */
+  background-color: #0062cc; /* Darker blue background on hover */
+  padding-left: 20px; /* Increased left padding on hover */
+}
+
+/* Active Link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #007bff; /* Active link in primary blue */
+  font-weight: bold; /* Make active link bold */
+  background-color: #e7f1ff; /* Lighter blue background for active link */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* White icon for the toggler */
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Fixed Top */
+body {
+  padding-top: 80px; /* Adjust body padding for fixed navbar */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem; /* Slightly larger font on smaller screens */
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    padding-left: 10px; /* Subtle left padding on hover for small screens */
+    background-color: #0062cc; /* Darker blue on hover for small screens */
+  }
+
+  /* Navbar Toggler Icon */
+  .navbar-toggler-icon {
+    background-color: #007bff; /* Blue toggler icon on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem; /* Adjust font size for very small screens */
+    padding: 10px 12px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem; /* Adjust brand font size for smaller screens */
+  }
+}
